@@ -3,6 +3,7 @@ class HelloRuby
 		p "hi"
 		p "3rd change"
 		p "4th change"
+		p "change from branch 2ndTrans"
 	end
 end
 HelloRuby.new()
