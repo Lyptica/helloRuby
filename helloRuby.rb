@@ -1,7 +1,7 @@
 class HelloRuby
 	def initialize()
 		p "hi"
-		p "2nd change"
+		p "3rd change"
 	end
 end
 HelloRuby.new()
