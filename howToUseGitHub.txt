@@ -1,0 +1,59 @@
+GitHubの使い方！
+
+■コミットするまで一番簡単な３ステップ
+１．$ git init
+２．$ git add --all *
+３．$ git commit -m “1st deploy”
+
+■Githubにアップロードする３ステップ
+１．https://github.com/new
+２．$ git remote add origin https://github.com/Lyptica/helloRuby.git
+３．$ git push -u origin master
+
+■Githubから復元するには・・
+１．$ git clone https://github.com/Lyptica/helloRuby.git
+
+■Githubから変更箇所だけpullするには・・
+１．$ git branch MBP15
+２．$ git pull 
+３．$ git checkout master
+４．$ git merge MBP15
+５．-> アップロード手順を踏む
+
+■gitをちゃんと使うには
+
+★構造
+作業ディレクトリ
+↓ add
+ステージング
+↓ commit
+リポジトリ (リモート or ローカル)
+
+★ファイル操作
+$ git init		>> リポジトリの新規作成
+$ git config 	>> 設定情報を一覧
+--
+$ git add --all *	>> 差分をステージングに追加
+$ git status	>> ステージングの内容を確認
+$ git reset *	>> ステージングから削除
+--
+$ git commit	>> ステージングの内容をアップロード
+$ git log		>> コミット履歴を一覧
+$ git log --oneline
+--
+$ git checkout #hash# *	>> 指定したコミットに戻る
+$ git diff		>> 差分を確認する
+--
+$ git branch 2ndTrans	>> ブランチを作成
+$ git branch			>> ブランチを一覧
+$ git chackout 2ndTrans	>> ブランチを切り替え
+$ git branch -d 2ndTrans	>> ブランチの削除
+--
+$ git merge 2ndTrans	>> 指定したブランチを現在のブランチにくっつける
+$ git checkout #hash名# *	>> マージ後に好きなコミットに移動
+
+参考リンク:
+Gitの基本的な使い方メモ
+http://qiita.com/opengl-8080/items/451c5967cbbc262f4f0d
+git pull と git pull –rebase の違いって？図を交えて説明します！ 
+http://kray.jp/blog/git-pull-rebase/
