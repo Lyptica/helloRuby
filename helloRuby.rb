@@ -1,3 +1,5 @@
+# comment test
+
 class HelloRuby
 	def initialize()
 		p "hi"
