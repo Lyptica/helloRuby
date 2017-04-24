@@ -1,4 +1,5 @@
 # comment test
+# comment test2
 
 class HelloRuby
 	def initialize()
